@@ -16,16 +16,7 @@ public class LabCorpStepDefinition {
             e.printStackTrace();
         }
     }
-    public static void switchToWindow(String targetTitle) {
-        String origin = Driver.getDriver().getWindowHandle();
-        for (String handle : Driver.getDriver().getWindowHandles()) {
-            Driver.getDriver().switchTo().window(handle);
-            if (Driver.getDriver().getTitle().equals(targetTitle)) {
-                return;
-            }
-        }
-        Driver.getDriver().switchTo().window(origin);
-    }
+
 
     LabCorpHomePage labCorpHomePage = new LabCorpHomePage();
     LabCorpCareersPage labCorpCareersPage = new LabCorpCareersPage();
@@ -45,6 +36,8 @@ public class LabCorpStepDefinition {
 
     @And("user search for QA Test Automation Developer")
     public void userSearchFor() {
+        waitFor(10);
+        Driver.getDriver().manage().deleteAllCookies();
         labCorpCareersPage.searchBar.sendKeys(ConfigReader.read("jobTitle"));
         labCorpCareersPage.searchButton.click();
     }

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
-@JsonIgnoreProperties()
+@JsonIgnoreProperties(value = "id",allowGetters = true)
 public class LabCorpBody {
 
     private Integer createdAt;
@@ -19,6 +19,8 @@ public class LabCorpBody {
     private Boolean employeeOnleave;
     private List<Object> techStack = null;
     private List<Object> project = null;
+
+    private int Id;
 
     public Integer getCreatedAt() {
         return createdAt;
@@ -116,7 +118,13 @@ public class LabCorpBody {
         this.project = project;
     }
 
+    public int getId() {
+        return Id;
+    }
 
+    public void setId(int id) {
+        this.Id = id;
+    }
 
     @Override
     public String toString() {
@@ -133,6 +141,7 @@ public class LabCorpBody {
                 ", employeeOnleave=" + employeeOnleave +
                 ", techStack=" + techStack +
                 ", project=" + project +
+                ", Id=" + Id +
                 '}';
     }
 }

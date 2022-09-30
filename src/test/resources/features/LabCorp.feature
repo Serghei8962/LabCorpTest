@@ -1,5 +1,5 @@
 Feature: LabCorp job listing information
-
+@ui
   Scenario: Job listing information
     Given As a user i want to be on home page
     When user click on Careers link
