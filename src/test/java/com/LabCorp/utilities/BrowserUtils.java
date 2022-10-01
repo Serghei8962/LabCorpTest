@@ -27,7 +27,6 @@ public class BrowserUtils {
         String origin = Driver.getDriver().getWindowHandle();
         for (String handle : Driver.getDriver().getWindowHandles()) {
             Driver.getDriver().switchTo().window(handle);
-            System.out.println(Driver.getDriver().getTitle());
             if (Driver.getDriver().getTitle().equals(targetTitle)) {
                 return;
             }

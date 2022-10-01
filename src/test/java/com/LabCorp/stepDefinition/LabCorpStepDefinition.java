@@ -30,6 +30,7 @@ public class LabCorpStepDefinition {
     public void userSearchFor() {
 
         switchToWindow("Careers at Labcorp | Join The Pursuit");
+        waitFor(3);
         String cookieButton ="document.querySelector(\"body > div.ph-header > section:nth-child(1) > div > div > div > div.cookie-button-area > button\")";
         WebElement cookieWebElement = getShadowRoot(Driver.getDriver(), cookieButton);
         cookieWebElement.click();
