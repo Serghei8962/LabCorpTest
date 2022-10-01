@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>30 Sep 2022, 10:10</td>
+      <td>30 Sep 2022, 20:15</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">LabCorp job listing information</td>
-          <td      class="passed"    >2</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td      class="passed"    >6</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="15890695700">15.890</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="16228250500">16.228</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">LabCorp job listing information</span>
 
@@ -191,12 +191,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">15.890</span>
+  <span class="lead-duration duration">16.228</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Job listing information</span>
 
@@ -207,16 +207,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -226,7 +226,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">As a user i want to be on home page</span>
 
-  <span class="lead-duration duration">2.754</span>
+  <span class="lead-duration duration">2.724</span>
 
 </div>
 
@@ -261,7 +261,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user click on Careers link</span>
 
-  <span class="lead-duration duration">3.092</span>
+  <span class="lead-duration duration">0.080</span>
 
 </div>
 
@@ -284,11 +284,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user search for QA Test Automation Developer</span>
 
-  <span class="lead-duration duration">10.040</span>
+  <span class="lead-duration duration">3.969</span>
 
 </div>
 
@@ -296,39 +296,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.NoSuchWindowException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.62)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9BR05HE', ip: '10.5.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.62, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\grius\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0613cfb797888228da266966fdf5faef
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)
-	at com.LabCorp.stepDefinition.LabCorpStepDefinition.userSearchFor(LabCorpStepDefinition.java:40)
-	at &#10045;.user search for QA Test Automation Developer(file:///C:/Users/grius/IdeaProjects/LabCorpTest/src/test/resources/features/LabCorp.feature:6)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -344,11 +311,11 @@ Session ID: 0613cfb797888228da266966fdf5faef
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click select and browse to this position</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.139</span>
 
 </div>
 
@@ -371,11 +338,11 @@ Session ID: 0613cfb797888228da266966fdf5faef
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user click Apply Now and confirm Job Title, Job Location, Job ID and another text of choice to match the previous page in the proceeding page</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">3.527</span>
 
 </div>
 
@@ -398,11 +365,11 @@ Session ID: 0613cfb797888228da266966fdf5faef
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user click return to Job Search</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">4.787</span>
 
 </div>
 

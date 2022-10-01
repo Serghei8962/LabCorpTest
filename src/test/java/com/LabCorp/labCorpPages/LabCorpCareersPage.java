@@ -9,7 +9,7 @@ public class LabCorpCareersPage {
     public LabCorpCareersPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//header/div[1]/div/div[4]/section/div/form//div[2]/div/div/div[1]/label")
+    @FindBy(xpath = "(//input[@id='typehead'])[1]")
     public WebElement searchBar;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -21,22 +21,25 @@ public class LabCorpCareersPage {
     @FindBy(xpath = "//h1[.='QA Test Automation Developer']")
     public WebElement jobTitle;
 
-    @FindBy(xpath = "//span[.='Location']")
+    @FindBy(css = ".au-target.job-location")
     public WebElement location;
 
-    @FindBy(xpath = "//div[1]/span[3]/span/text()[4]")
+    @FindBy(css = ".au-target.jobId")
     public WebElement jobId;
 
-    @FindBy(xpath = "//div[2]/p[3]/text()")
+    @FindBy(xpath = "//div[2]/p[3]")
     public WebElement jobDescriptionText;
 
     @FindBy(xpath = "//div[2]/ul[2]/li[2]/p")
     public WebElement managementSupportText;
 
-    @FindBy(xpath = "//div[2]/ul[4]/li[13]/p/text()")
+    @FindBy(xpath = "//div[2]/ul[4]/li[13]/p")
     public WebElement requirementsText;
 
 
     @FindBy(xpath = "//a/ppc-content[.='Apply Now']")
     public WebElement applyNowButton;
+
+    @FindBy(xpath = "//a[@href=\"https://careers.labcorp.com/global/en/search-results?keywords=QA%20Test%20Automation%20Developer&s=1\"]")
+    public WebElement backToSearchButton;
 }
